@@ -1,3 +1,7 @@
+USE z1979224;
+
+DROP TABLE IF EXISTS ORDERS,PRODUCTS,CUSTOMERS;
+
 CREATE TABLE PRODUCTS (
     productID INT PRIMARY KEY,
     partName VARCHAR(50),
@@ -8,20 +12,26 @@ CREATE TABLE PRODUCTS (
 );
 
 CREATE TABLE CUSTOMERS (
-    customerID INT PRIMARY KEY,
+    customerID INT AUTO_INCREMENT PRIMARY KEY,
     customerName VARCHAR(100),
+    Address1 VARCHAR(100),
+    City VARCHAR(100),
+    State CHAR(2),
+    Country CHAR(2),
+    PostalCode VARCHAR(16),
     customerEmail VARCHAR(50)
 );
 
 CREATE TABLE ORDERS (
-    orderID INT PRIMARY KEY,
+    customerID INT,
+    orderID INT,
     orderDate DATE,
     orderStatus VARCHAR(50),
+    PRIMARY KEY(orderID),
     FOREIGN KEY (customerID) REFERENCES CUSTOMERS(customerID)
 );
 
-CREATE TABLE INVENTORY (
-    partNum INT PRIMARY KEY,
-    quantityONhand INT,
-    FOREIGN KEY (partNum) REFERENCES PRODUCTS(partNum)
-);
+SHOW Tables;
+DESCRIBE PRODUCTS;
+DESCRIBE CUSTOMERS;
+DESCRIBE ORDERS;

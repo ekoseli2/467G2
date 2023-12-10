@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Card Payment</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="payment-form">
+    <h1>Enter Credit Card Information</h1>
+    <form id="paymentForm">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber"  required>
+      <br>
+
+      <label for="expDate">Expiration Date:</label>
+      <input type="text" id="expDate" name="expDate" placeholder="MM/YYYY" required>
+      <br>
+
+      <label for="purchaseAmount">Purchase Amount:</label>
+      <input type="text" id="purchaseAmount" name="purchaseAmount" required>
+      <br>
+      <br>
+
+      <button type="button" onclick="checkPayment()">Authorize Payment</button>
+    </form>
+  <script src="payment.js"></script>
+</body>
+</html>

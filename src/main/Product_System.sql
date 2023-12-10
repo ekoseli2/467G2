@@ -19,7 +19,8 @@ CREATE TABLE CUSTOMERS (
     State CHAR(2),
     Country CHAR(2),
     PostalCode VARCHAR(16),
-    customerEmail VARCHAR(50)
+    customerEmail VARCHAR(50),
+    PSW VARCHAR(50)
 );
 
 CREATE TABLE ORDERS (

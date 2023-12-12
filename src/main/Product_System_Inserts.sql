@@ -57,9 +57,9 @@ SELECT * FROM CUSTOMERS;
 
 /*                   Orders                            */
 INSERT INTO ORDERS Values ('0001','0001','2023-11-23','Shipped');
-INSERT INTO ORDERS Values ('0004','0002','2023-11-27','Pending');
-INSERT INTO ORDERS Values ('0002','0003','2023-12-2','Delayed');
+INSERT INTO ORDERS Values ('0004','0002','2023-11-27','Complete');
+INSERT INTO ORDERS Values ('0002','0003','2023-12-2','Pending');
 INSERT INTO ORDERS Values ('0005','0004','2023-12-8','Shipped');
-INSERT INTO ORDERS Values ('0003','0005','2023-12-9','Pending');
+INSERT INTO ORDERS Values ('0003','0005','2023-12-9','Complete');
 
 SELECT * FROM ORDERS;

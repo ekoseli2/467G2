@@ -12,14 +12,14 @@ CREATE TABLE PRODUCTS (
 );
 
 CREATE TABLE CUSTOMERS (
-    customerID INT AUTO_INCREMENT PRIMARY KEY,
+    customerID int(20) NOT NULL UNIQUE AUTO_INCREMENT PRIMARY KEY,
     customerName VARCHAR(100),
     Address1 VARCHAR(100),
     City VARCHAR(100),
     State CHAR(2),
     Country CHAR(2),
-    PostalCode VARCHAR(16),
-    customerEmail VARCHAR(50),
+    PostalCode VARCHAR(5),
+    customerEmail VARCHAR(50) UNIQUE,
     PSW VARCHAR(50)
 );
 

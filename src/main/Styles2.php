@@ -165,7 +165,7 @@
     top: 50%;
     left: 50%;
     -ms-transform: translate(+43%, -50%);
-    transform: translate(-513%, -960%);
+    transform: translate(-650%, -400%);
   }
 
   .dropbtn {
@@ -202,7 +202,17 @@
   .dropdown a:hover {background-color: #ddd;}
   .show {display: block;}
 
-  
+  .SignUp {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    }
+
+    .ButtonLeft {
+      text-align: left;
+    }  
+
   </style>
 
   </head>
